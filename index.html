@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS CHAT APP </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyCrm_06-i2R3DpRd7MPEfQNIqpuCg-vqMY",
+      authDomain: "chat-app-a7b96.firebaseapp.com",
+      databaseURL: "https://chat-app-a7b96.firebaseio.com",
+      projectId: "chat-app-a7b96",
+      storageBucket: "chat-app-a7b96.appspot.com",
+      messagingSenderId: "1030956143659",
+      appId: "1:1030956143659:web:7a688ed4cdd771d46a466e",
+      measurementId: "G-X2HHG0VBCB"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    
+</script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.0/uuid.min.js" ></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat">
+
+        <form id="nameForm">
+
+            <input type="text"  id="inputName" placeholder="Enter Your Name">
+            <button id="nameInputbtn">Enter Name</button>
+
+
+        </form>
+        <div class="chat-header">
+
+                Chat Group
+                <button class="btn" id="delAllbtn"><i class="fa fa-trash"></i></button>
+        </div>
+        <div class="chat-window" id="chat-window">
+            <ul id="messageArea">
+                
+                
+            </ul>
+            
+            
+        </div>
+        <form id=message-form>
+            <input type="text" id="message-input" placeholder="Type your message here">
+            <button id="message-btn">Send</button>
+        </form>
+        
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
